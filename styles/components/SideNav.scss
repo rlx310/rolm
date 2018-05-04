@@ -1,0 +1,43 @@
+.side-nav {
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: all .3s;
+
+    li {  
+      margin: 0; 
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 998;
+    opacity: 0;
+    display: none;
+    transition: opacity .3s;
+  }
+
+  &.active {
+    ul {
+      transform: translateX(0);
+    }
+
+    .side-nav__overlay {
+      opacity: 1;
+      display: block;
+    }
+  }
+}

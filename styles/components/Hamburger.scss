@@ -1,0 +1,69 @@
+.hamburger-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color .3s;
+  padding: 0 15px;
+  width: 50px;
+  height: 100%;
+
+  &:hover {
+    background-color: darken($nav-bgcolor-indigo, 15%);
+  }
+    
+  i,
+  i:before,
+  i:after {
+    content: "";
+    line-height: 0;
+    position: absolute;
+    display: inline-block;
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    transition: all .3s;
+  }
+
+  i {
+    top: 32px;
+  }
+  i:before {
+    margin-top: -5px;
+    transform: rotate(0);
+  }
+  i:after {
+    margin-top: 5px;
+    transform: rotate(0);
+  }
+
+  &.active {
+    i {
+      background-color: transparent;
+    }
+    i:before {
+      margin-top: 0;
+      transform: rotate(135deg);
+    }
+    i:after {
+      margin-top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+
+
+//   input[type="checkbox"]:checked ~ label {
+//     i {
+//       background-color: transparent;
+//     }
+//     i:before {
+//       transform: rotate(135deg);
+//       margin-top: 0;
+//     }
+//     i:after {
+//       transform: rotate(-135deg);
+//       margin-top: 0;
+//     }
+//   }
+// }
