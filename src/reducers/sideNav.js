@@ -1,4 +1,4 @@
-const initState = {active: false}
+const initState = { active: false }
 const sideNavReducer = (state=initState, action) => {
   switch (action.type) {
     case 'TRIGGER':

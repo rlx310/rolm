@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { triggerSideNav } from '../actions/sideNav'
+import { NavLink } from 'react-router-dom'
 import classnames from 'classnames'
 
 
@@ -16,8 +17,11 @@ const SideNav = ({ sideNavActive, triggerSideNav }) => (
           </div>
         </div>
       </li>
-      <li></li>
-      <li></li>
+      <li><NavLink to="/dashboard" activeClassName="active-link">Dashboard</NavLink></li>
+      <li><NavLink to="/lessons" activeClassName="active-link">Lessons</NavLink></li>
+      <li><NavLink to="/editor" activeClassName="active-link">Editor</NavLink></li>
+      <li><NavLink to="/forms" activeClassName="active-link">Forms</NavLink></li>
+      <li><NavLink to="/typing" activeClassName="active-link">Typing</NavLink></li>
     </ul>
     <div 
       className="side-nav__overlay"
@@ -30,5 +34,5 @@ export default connect(
   ({ sideNav }) => ({ //mapStateToProps
     sideNavActive: sideNav.active
   }),
-  { triggerSideNav }
+  { triggerSideNav } //mapDispatchToProps
 )(SideNav)

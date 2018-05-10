@@ -1,0 +1,145 @@
+[
+  {
+    "id": "00001",
+    "name": "Ashlyn Nam",
+    "username": "ashlyn@lcf.ucode",
+    "password": "ashlyn1",
+    "currentProject": "001",
+    "currentLesson": "001001"
+  },
+  {
+    "id": "00002",
+    "name": "Warren Nam",
+    "username": "warren@lcf.ucode",
+    "password": "warren1",
+    "currentProject": "001",
+    "currentLesson": "001001"
+    },
+  {
+    "id": "00003",
+    "name": "Kyle Nghiem", 
+    "username": "kyle@lcf.ucode",
+    "password":"kyle1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00004",
+    "name": "William Glarum", 
+    "username": "william@lcf.ucode",
+    "password": "william1",
+    "currentLesson": "0"
+  
+  },
+  {
+    "id": "00005",
+    "name": "Kaden Sherman", 
+    "username": "kaden@lcf.ucode",
+    "password": "kaden1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00007",
+    "name": "Damien Torres", 
+    "username": "damien@lcf.ucode",
+    "password": "damien1", 
+    "currentLesson": "0"
+  },
+  {
+    "id": "00008",
+    "name": "Marios Tsotras", 
+    "username": "marios@lcf.ucode",
+    "password": "marios1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00009",
+    "name": "Brooke Landry", 
+    "username": "brooke@lcf.ucode",
+    "password": "brooke1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00010",
+    "name": "Owen Lindberg", 
+    "username": "owen@lcf.ucode",
+    "password": "owen1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00101",
+    "name": "Matteo Galvagni", 
+    "username": "matteo@lcf.ucode",
+    "password": "matteo1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00102",
+    "name": "Kristin Presti", 
+    "username": "kristin@lcf.ucode",
+    "password": "kristin1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00103",
+    "name": "Amelia Rivas", 
+    "username": "amelia@lcf.ucode",
+    "password": "amelia1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00104",
+    "name": "Ethan Bonyadian", 
+    "username": "etahn@lcf.ucode",
+    "password": "ethan1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00105",
+    "name": "Princeton Wong",
+    "username": "princeton@lcf.ucode",
+    "password": "princeton1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00106",
+    "name": "Deven Cruickshank",
+    "username": "deven@lcf.ucode",
+    "password": "deven1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00107",
+    "name": "Olivia Marta",
+    "username": "olivia@lcf.ucode",
+    "password": "olivia1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00108",
+    "name": "Adam Entabi",
+    "username": "adam@lcf.ucode",
+    "password": "adam1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00109",
+    "name": "Rashad Entabi",
+    "username": "rashad@lcf.ucode",
+    "password": "rashad1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00110",
+    "name": "Samuel Park",
+    "username": "samuel@lcf.ucode",
+    "password": "samuel1",
+    "currentLesson": "0"
+  },
+  {
+    "id": "00111",
+    "name": "Armen Agadzhanyan",
+    "username": "armen@lcf.ucode",
+    "password": "armen1",
+    "currentLesson": "0"
+  }
+]

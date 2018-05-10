@@ -2,11 +2,12 @@ import React from 'react'
 import Navbar from '../../components/Navbar.js'
 import SideNav from '../../components/SideNav.js'
 
-const Dashboard = () => (
-  <div>
+const Forms = () => (
+  <div> 
     <SideNav />
     <Navbar />
-    <p>Dashboard</p>
+    <p>Forms</p>
   </div>
 )
-export default Dashboard
+
+export default Forms

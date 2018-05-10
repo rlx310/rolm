@@ -2,11 +2,12 @@ import React from 'react'
 import Navbar from '../../components/Navbar.js'
 import SideNav from '../../components/SideNav.js'
 
-const Dashboard = () => (
+const Editor = () => (
   <div>
     <SideNav />
     <Navbar />
-    <p>Dashboard</p>
+    <p>Editor</p>
   </div>
 )
-export default Dashboard
+
+export default Editor

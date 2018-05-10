@@ -2,11 +2,12 @@ import React from 'react'
 import Navbar from '../../components/Navbar.js'
 import SideNav from '../../components/SideNav.js'
 
-const Dashboard = () => (
+const Typing = () => (
   <div>
     <SideNav />
     <Navbar />
-    <p>Dashboard</p>
+    <p>Typing</p>
   </div>
 )
-export default Dashboard
+
+export default Typing

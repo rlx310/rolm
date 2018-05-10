@@ -1,5 +1,6 @@
-const model = {
+const exampleStore = {
   user: {
+    signedIn: true,
     name: "Timmy Peters",
     email: "timmyperters55@gmail.com",
     avatar: "",
@@ -14,6 +15,7 @@ const model = {
   sideNav: {
     active: false
   },
+
 }
 
-export default model
+export default exampleStore
