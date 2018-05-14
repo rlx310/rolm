@@ -1,20 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import lessons from '../../model/lessons.json'
 
-class Lesson extends React.Component {
-  render() {
-    return (
-      <div>
-       <iframe src="https://www.youtube.com/embed">
-       </iframe>
-      </div>
-    )
-  }
-}
+const Lesson = ({ youtubeID }) => (
+  <div className="embed-responsive">
+    <iframe src={`https://www.youtube.com/embed/${youtubeID}?rel=0&modestbranding=1`}>
+    </iframe>
+  </div>
 
-export default connect(
-  ({ user }) => ({ //mapStateToProps
-    currentProject: user.currentProject,
-    currentLesson: user.currentLesson
-  })
-)(Lesson)
+)
+
+export default Lesson

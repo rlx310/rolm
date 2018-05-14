@@ -4,11 +4,21 @@ import { Route, Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar.js'
 import SideNav from '../../components/SideNav.js'
 import Lesson from './Lesson'
+import lessons from '../../model/lessons.json'
+
 
 class Lessons extends React.Component {
   constructor(props) {
     super(props)
+    const currentLesson = lessons.find(
+      (project) => project.id === props.currentProject
+    ).lessons.find( 
+      (lesson) => lesson.id === props.currentLesson
+    ).youtubeID
 
+    this.state = {
+      lessonID: currentLesson
+    }
   }
 
   render() {
@@ -21,9 +31,7 @@ class Lessons extends React.Component {
         <SideNav />
         <Navbar />
         <p>Lessons</p>
-        <Link to={`${this.props.match.url}/${this.props.currentProject}/${this.props.currentLesson}`}>Link</Link>
-        <Route path={`${this.props.match.url}/:lesson`} component={Lesson} />
-        <p>{console.log(this.props)}</p>
+        <Lesson youtubeID={this.state.lessonID} />
       </div>
     )
   }

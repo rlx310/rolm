@@ -47,7 +47,14 @@ const _nextLessonResponse = (response) => ({
   response
 })
 
-export const nextLesson = () => (dispatch, getState) => {
-  dispatch(_nextLessonRequest())
-  model.getLesson()
+const _loadLessonsRequest = () => ({
+  type: 'LOAD_LESSONS',
+})
+const _loadLessonsResponse = (response) => ({
+  type: 'LOAD_LESSONS',
+  response
+})
+
+export const loadLessons = () => dispatch => {
+  dispatch(_loadLessonsRequest())
 }
