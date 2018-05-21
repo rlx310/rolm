@@ -1,16 +1,22 @@
 const exampleStore = {
   user: {
+    fetching: false,
     signedIn: true,
-    name: "Timmy Peters",
-    email: "timmyperters55@gmail.com",
+    loginFailed: false,
+    name: "Timmy",
+    email: "",
     avatar: "",
-    coins: 22,
-    priveledges: 'student',
-    recents: {
-      lesson: '',
-      typing: '',
-      editor: '',
-    }
+    coins: 0,
+    priveledges: "",
+    recents: {}
+  },
+  lessons: {
+    currentProject: "",
+    nextProject: "" ,
+    prevProject: "",
+    currentLesson: "",
+    nextLesson: "",
+    prevLesson: "",
   },
   sideNav: {
     active: false

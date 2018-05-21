@@ -24,10 +24,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
-    z-index: 998;
+      z-index:-999;
     opacity: 0;
-    display: none;
-    transition: opacity .3s;
+    visibility: hidden;
+    transition: all .3s;
   }
 
   &.active {
@@ -37,7 +37,8 @@
 
     .side-nav__overlay {
       opacity: 1;
-      display: block;
+      visibility: visible;
+      z-index: 998;
     }
   }
 

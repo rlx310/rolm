@@ -10,11 +10,20 @@ import lessons from '../../model/lessons.json'
 class Lessons extends React.Component {
   constructor(props) {
     super(props)
-    const currentLesson = lessons.find(
-      (project) => project.id === props.currentProject
-    ).lessons.find( 
-      (lesson) => lesson.id === props.currentLesson
-    ).youtubeID
+    console.log(lessons)
+    let currentLesson
+    const currentProject = lessons.find((project) => project.id === props.currentProject)
+    if (currentProject) {
+      currentLesson = lessons.find(
+        (project) => project.id === props.currentProject
+      ).lessons.find( 
+        (lesson) => lesson.id === props.currentLesson
+      ).youtubeID
+    }
+    else {
+      currentLesson = ''
+    }
+    
 
     this.state = {
       lessonID: currentLesson
@@ -31,7 +40,7 @@ class Lessons extends React.Component {
         <SideNav />
         <Navbar />
         <p>Lessons</p>
-        <Lesson youtubeID={this.state.lessonID} />
+        <Lesson youtubeID={this.state.lessonID} /> 
       </div>
     )
   }

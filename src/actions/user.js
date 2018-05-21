@@ -38,6 +38,16 @@ export const localLogout = () => dispatch => {
   dispatch(_localLogoutRequest())
 }
 
+const _prevLessonRequest = () => ({
+  type: 'PREV_LESSON',
+})
+const _prevLessonResponse = (response) => ({
+  type: 'PREV_LESSON',
+  response
+})
+const prevLesson = () => dispatch => {
+  dispatch(_prevLessonRequest)
+}
 
 const _nextLessonRequest = () => ({
   type: 'NEXT_LESSON'
